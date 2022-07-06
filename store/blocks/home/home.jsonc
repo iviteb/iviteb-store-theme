@@ -1,11 +1,10 @@
 {
   "store.home": {
     "blocks": [
-      "responsive-layout.desktop",
-      "responsive-layout.tablet",
-      "responsive-layout.phone",
-      "banner-with-products",
-      // "banner-with-products",
+      "responsive-layout.desktop#point-banner",
+      "responsive-layout.tablet#point-banner",
+      "responsive-layout.phone#point-banner",
+      "list-context.product-list-static",
       "list-context.image-list#demo",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
@@ -19,43 +18,47 @@
       "newsletter"
     ]
   },
-  "responsive-layout.desktop": {
+  "responsive-layout.desktop#point-banner": {
     "children": [
       "banner-with-products#desktop"
     ]
   },
-  "responsive-layout.tablet": {
+  "responsive-layout.tablet#point-banner": {
     "children": [
       "banner-with-products#tablet"
     ]
   },
-  "responsive-layout.phone": {
+  "responsive-layout.phone#point-banner": {
     "children": [
       "banner-with-products#phone"
     ]
   },
-  "banner-with-products#desktop": {},
-  "banner-with-products#tablet": {},
-  "banner-with-products#phone": {},
-  "banner-with-products": {
+  "banner-with-products#desktop": {
     "blocks": [
       "product-summary.shelf#test"
     ],
     "children": [
-      // "vtex.store-components:product-name",
-      "product-images",
-      "product-list-price"
-      // "product-summary-image",
-      // "product-summary-price"
-      // "list-context.product-list"
-      // "flex-layout.row#deals"
-      // "product-summary.shelf#test"
-    ]
+      "slider-layout#demo-products"
+    ],
+    "title": "Banner cu Produse - Desktop"
   },
-  "list-context.product-list": {
+  "banner-with-products#tablet": {
     "blocks": [
-      "product-summary.shelf"
-    ]
+      "product-summary.shelf#test"
+    ],
+    "children": [
+      "slider-layout#demo-products"
+    ],
+    "title": "Banner cu Produse - Tablet"
+  },
+  "banner-with-products#phone": {
+    "blocks": [
+      "product-summary.shelf#test"
+    ],
+    "children": [
+      "slider-layout#demo-products"
+    ],
+    "title": "Banner cu Produse - Phone"
   },
   "product-summary.shelf#test": {
     "children": [
