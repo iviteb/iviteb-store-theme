@@ -38,7 +38,7 @@
       "product-summary.shelf#test"
     ],
     "children": [
-      "slider-layout#demo-products"
+      "list-context-renderer#wrapped"
     ],
     "title": "Banner cu Produse - Desktop"
   },
@@ -47,7 +47,7 @@
       "product-summary.shelf#test"
     ],
     "children": [
-      "slider-layout#demo-products"
+      "list-context-renderer#wrapped"
     ],
     "title": "Banner cu Produse - Tablet"
   },
@@ -56,9 +56,15 @@
       "product-summary.shelf#test"
     ],
     "children": [
-      "slider-layout#demo-products"
+      "list-context-renderer#wrapped"
     ],
     "title": "Banner cu Produse - Phone"
+  },
+  "list-context-renderer#wrapped": {
+    "props": {
+      "listElement": "ul",
+      "itemElement": "li"
+    }
   },
   "product-summary.shelf#test": {
     "children": [
